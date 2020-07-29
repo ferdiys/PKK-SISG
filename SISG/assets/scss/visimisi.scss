@@ -1,0 +1,59 @@
+@import "style.scss";
+
+#visimisi {
+
+    #heading {
+        background-image: url("https://images.unsplash.com/photo-1570238647998-b4da400b6db6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        position: relative;
+
+        .mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba($black,.4);
+        }
+
+        .caption {
+            padding: $sizing-standard;
+            position: relative;
+
+            @include small-mobile {
+                display:  none;
+            }
+
+            h3 {
+                margin-bottom: $sizing-standard / 4;
+                color: white;
+            }
+
+            .hr-green{
+                width: 30%;
+                height: 2px;
+                background-color: $yellow;
+            }
+        
+        }
+    }
+
+    #content {
+
+        .container {
+
+            .title {
+                margin: $sizing-standard * 2 0;
+            }
+
+        }
+
+    }
+
+}

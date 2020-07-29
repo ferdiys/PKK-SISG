@@ -1,0 +1,510 @@
+@import "../style.scss";
+
+#admin-auth {
+    height: 100%;
+
+    .form {
+        position: relative;
+        padding: $sizing-standard * 3;
+
+        h6 {
+            color: $yellow;
+        }
+
+        h3:before {
+            content:"";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            border-left: 8px solid $yellow;
+        }
+
+        .login-btn {
+            width: 100%;
+            height: 50px;
+            border-radius: $border-standard * 5;
+            background-color: $yellow;
+            border: 0;
+            outline: none;
+            box-shadow: 2px 6px 12px rgba($yellow, .7);  
+
+            font-family: $heading-font;
+            font-weight: 700;
+            color: $black;
+
+            transition: .3s ease-in-out;
+
+            &:hover {
+                box-shadow: 2px 6px 12px rgba($yellow, 0);
+                background-color: darken($yellow, 6%)
+            }
+
+        }
+
+        .copyright {
+            font-size: 14px;
+            position: absolute;
+            left: $sizing-standard * 3;
+            bottom: $sizing-standard * 3;
+
+            @include small-mobile {
+                bottom: $sizing-standard;
+            }
+    
+            @include mobile {
+                bottom: $sizing-standard;
+            }
+        }
+    }
+
+    .background {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .6) ),url("https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        @include small-mobile {
+            display: none;
+        }
+
+        @include mobile {
+            display: none;
+        }
+
+        // .mask {
+        //     position: absolute;
+        //     top: 0;left: 0;right: 0;bottom: 0;
+            
+        // }
+    }
+
+    .forgot-password {
+        width: max-content;
+        cursor: pointer;
+        color: #FF4A1C;
+        font-style: italic;
+    }
+}
+
+#edit-manage-foto {
+
+    .pic-wrapper{
+        height: 200px;
+        width: 200px;
+        position: relative;
+
+        .profile-pic {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 2px 2px 6px rgba($yellow,.5);
+        }
+
+        .mask:hover{
+            opacity: 1;
+        }
+
+        input[type=file] {
+            cursor: pointer;
+            // font-size: 100px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+        }
+    
+        .mask {
+            cursor: pointer;
+            z-index: 2;
+            display: flex;
+            position: absolute;
+            background: rgba($gray, .1);
+            left: $sizing-standard / 2;
+            top: 0;
+            right: $sizing-standard / 2;
+            bottom: 0;
+            border-radius: 50%;
+            opacity: 0;
+    
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+        }
+    }
+
+    .vid-wrapper{
+        height: max-content;
+        width: 100%;
+        position: relative;
+
+        .mask:hover{
+            opacity: 1;
+        }
+
+        input[type=file] {
+            cursor: pointer;
+            // font-size: 100px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+        }
+    
+        .mask {
+            cursor: pointer;
+            z-index: 2;
+            display: flex;
+            position: absolute;
+            background: rgba($gray, .1);
+            left: $sizing-standard / 2;
+            top: 0;
+            right: $sizing-standard / 2;
+            bottom: 0;
+            opacity: 0;
+    
+            img {
+                width: 40px;
+                height: 40px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+        }
+
+    }
+
+    .select-file{
+        width: 100%;
+        position: relative;
+
+        button {
+            background: $yellow;
+            border: 0;
+            border-radius: $border-standard * 3;
+            outline: none;
+
+            padding: $sizing-standard / 3 0;
+            width: 80%;
+            margin: $sizing-standard / 2 auto;
+            font-family: $heading-font;
+            font-weight: 700;
+            color: $black;
+        }
+
+        input[type=file] {
+            cursor: pointer;
+            // font-size: 100px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+        }
+    }
+
+    .nav-tabs {
+        display: none;
+        border-bottom: none;
+        display: flex;
+
+        .nav-item {
+
+            .nav-link {
+                margin: 0;
+                padding: 0 $sizing-standard * 2 0 0;
+
+                color: $gray;
+                font-weight: 700;
+                font-family: $heading-font;
+                transition: .3s;
+                font-size: 16px;
+                border: 0;
+
+                @include small-mobile {
+                    padding-right: $sizing-standard;
+                }
+
+                &:hover {
+                    border-color: transparent;
+                    border: 0;
+                }
+
+                &.active {
+                    color: $yellow;
+                    font-weight: 700;
+                    border: 0;
+                }
+
+                @include mobile {
+                    font-size: 14px;
+                }
+
+                @include small-mobile {
+                    font-size: 14px;
+                }
+            }
+
+        }
+
+    }
+}
+
+#edit-extracurricular {
+
+    .pic-wrapper{
+        height: 300px;
+        width: 100%;
+        position: relative;
+
+        .profile-pic {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            box-shadow: 2px 2px 6px rgba($yellow,.5);
+        }
+
+        .mask:hover{
+            opacity: 1;
+        }
+
+        input[type=file] {
+            cursor: pointer;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+        }
+    
+        .mask {
+            cursor: pointer;
+            z-index: 1;
+            display: flex;
+            position: absolute;
+            background: rgba($black, .2);
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+    
+            img {
+                width: 40px;
+                height: 40px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+        }
+    }
+
+    .datePicker {
+        z-index: 2;
+    }
+
+}
+
+#identitas-content {
+    
+    .pic-wrapper{
+        height: 300px;
+        width: 100%;
+        position: relative;
+        margin-bottom: $sizing-standard ;
+
+        .profile-pic {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .mask:hover{
+            opacity: 1;
+        }
+
+        input[type=file] {
+            cursor: pointer;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+        }
+    
+        .mask {
+            cursor: pointer;
+            z-index: 1;
+            display: flex;
+            position: absolute;
+            background: rgba($black, .2);
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+    
+            img {
+                width: 40px;
+                height: 40px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+        }
+    }
+}
+
+#edit-fasilitas {
+
+    .pic-wrapper{
+        height: 300px;
+        width: 100%;
+        position: relative;
+
+        .profile-pic {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            box-shadow: 2px 2px 6px rgba($yellow,.5);
+        }
+
+        .mask:hover{
+            opacity: 1;
+        }
+
+        input[type=file] {
+            cursor: pointer;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+        }
+    
+        .mask {
+            cursor: pointer;
+            z-index: 1;
+            display: flex;
+            position: absolute;
+            background: rgba($black, .2);
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+    
+            img {
+                width: 40px;
+                height: 40px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+        }
+    }
+
+}
+
+#manage-waktuPPDB {
+    
+    .text-view {
+        background: $light-gray;
+        padding: $sizing-standard / 2 $sizing-standard;
+        border-radius: $border-standard * 2;
+        font-weight: 800;
+    }
+    
+}
+
+#edit-kegiatan {
+    .pic-wrapper{
+        height: 300px;
+        width: 100%;
+        position: relative;
+
+        .profile-pic {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            box-shadow: 2px 2px 6px rgba($yellow,.5);
+        }
+
+        .mask:hover{
+            opacity: 1;
+        }
+
+        input[type=file] {
+            cursor: pointer;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+        }
+    
+        .mask {
+            cursor: pointer;
+            z-index: 1;
+            display: flex;
+            position: absolute;
+            background: rgba($black, .2);
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+    
+            img {
+                width: 40px;
+                height: 40px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+        }
+    }
+    .datePicker {
+        z-index: 2;
+    }
+}
+#manage-akun {
+    
+    .err {
+        width: max-content;
+        cursor: pointer;
+        color: #FF4A1C;
+        font-style: italic;
+    }
+}

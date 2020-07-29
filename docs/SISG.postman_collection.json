@@ -1,0 +1,1493 @@
+{
+	"info": {
+		"_postman_id": "375cde7a-0baa-43c5-ae0a-83954b728d08",
+		"name": "SISG",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "School",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "sisg.id/api/school",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"school"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zaXNnLmlkXC9hcGlcL2xvZ2luIiwiaWF0IjoxNTc5NTY0ODM3LCJleHAiOjE1Nzk1Njg0MzcsIm5iZiI6MTU3OTU2NDgzNywianRpIjoiS0FFY1NIbHdxV0tWOTFPZiIsInN1YiI6MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.U9LlpyTdF1CNHBb1vh7Hl_wDdWHam6f3OLniJFTz9UQ",
+								"description": "bearer + token",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama",
+									"value": "SMP Sunan Giri",
+									"description": "required|string",
+									"type": "text"
+								},
+								{
+									"key": "logo",
+									"description": "required|image",
+									"type": "file",
+									"src": "/C:/Users/David Surya/Downloads/IMG-20200108-WA0002-removebg-preview.png"
+								},
+								{
+									"key": "deskripsi",
+									"value": "Sekolah Meningkat Pertama",
+									"description": "required|string",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "Dinoyo",
+									"description": "required|string",
+									"type": "text"
+								},
+								{
+									"key": "visi",
+									"value": "asjdiajsidjaisjd",
+									"description": "required|string",
+									"type": "text"
+								},
+								{
+									"key": "misi",
+									"value": "ibasicbaiusbciasbc",
+									"description": "required|string",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "mail@smpsunangiri.sch.id",
+									"description": "required|email|unique",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "08917202907",
+									"description": "required|numeric|digits_between:10,13",
+									"type": "text"
+								},
+								{
+									"key": "faximail",
+									"value": "792018",
+									"description": "required|string",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_berdiri",
+									"value": "2005-05-03",
+									"description": "required|date|yyyy-mm-dd",
+									"type": "text"
+								},
+								{
+									"key": "jml_guru",
+									"value": "15",
+									"description": "required|numeric",
+									"type": "text"
+								},
+								{
+									"key": "jml_staf",
+									"value": "25",
+									"description": "required|numeric",
+									"type": "text"
+								},
+								{
+									"key": "jml_murid",
+									"value": "42",
+									"description": "required|numeric",
+									"type": "text"
+								},
+								{
+									"key": "facebook",
+									"value": "https://facebook.com",
+									"type": "text"
+								},
+								{
+									"key": "youtube",
+									"value": "https://youtube.com",
+									"type": "text"
+								},
+								{
+									"key": "instagram",
+									"value": "https://instagram.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "sisg.id/api/school",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"school"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama",
+									"value": "",
+									"description": "sometimes|required|string",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "logo",
+									"description": "sometimes|required|image",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "deskripsi",
+									"value": "",
+									"description": "sometimes|required|string",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "alamat",
+									"value": "",
+									"description": "sometimes|required|string",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "visi",
+									"value": "",
+									"description": "sometimes|required|string",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "misi",
+									"value": "",
+									"description": "sometimes|required|string",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "",
+									"description": "sometimes|required|email",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "",
+									"description": "sometimes|required|numeric|digits_between:10,13",
+									"type": "text"
+								},
+								{
+									"key": "faximail",
+									"value": "",
+									"description": "sometimes|required|numeric",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "tanggal_berdiri",
+									"value": "",
+									"description": "sometimes|required|date|yyyy-mm-dd",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "jml_guru",
+									"value": "",
+									"description": "sometimes|required|numeric",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "jml_staf",
+									"value": "",
+									"description": "sometimes|required|numeric",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "jml_murid",
+									"value": "",
+									"description": "sometimes|required|numeric",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "_method",
+									"value": "put",
+									"description": "required",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "sisg.id/api/school/2",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"school",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "sisg.id/api/school/1",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"school",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zaXNnLmlkXC9hcGlcL2xvZ2luIiwiaWF0IjoxNTc3NDUyODg3LCJleHAiOjE1Nzc0NTY0ODcsIm5iZiI6MTU3NzQ1Mjg4NywianRpIjoiZU81OFNtZ05FS1B3aXZ4bSIsInN1YiI6MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.2bsnSEg3ENaPvdG1-gE1wpBa7QRZw1XvocOxhOpxRg8",
+								"description": "bearer + token",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "_method",
+									"value": "delete",
+									"description": "required",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "sisg.id/api/school/1",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"school",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "admin@smpsunangiri.sch.id",
+									"description": "required|email",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin5361",
+									"description": "required|string",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "sisg.id/api/login",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUserLogin",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zaXNnLmlkXC9hcGlcL2xvZ2luIiwiaWF0IjoxNTc3NTEwMjIxLCJleHAiOjE1Nzc1MTM4MjEsIm5iZiI6MTU3NzUxMDIyMSwianRpIjoiQTdYSFpVcFlreGYxaE5tdSIsInN1YiI6MiwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.uO7J_fNT0Mq9OvBFjaA8P5SoWv5en_mfFEoJGKn6PyA",
+								"description": "bearer + token",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "sisg.id/api/getUserLogin",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"getUserLogin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zaXNnLmlkXC9hcGlcL2xvZ2luIiwiaWF0IjoxNTc3NTEwNTA1LCJleHAiOjE1Nzc1MTQxMDUsIm5iZiI6MTU3NzUxMDUwNSwianRpIjoiTnBvUnpKWUwxQWhDbXgySSIsInN1YiI6MiwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.xfLThejWDS1uqNERnp3KeI6o2TOgb8cPP1KHQwPY8bw",
+								"description": "bearer + token",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "sisg.id/api/logout",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "",
+									"description": "required|string|min:5",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"description": "required|email|unique",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"description": "required|string|confirmed",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "",
+									"description": "required|string",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "sisg.id/api/register",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zaXNnLmlkXC9hcGlcL2xvZ2luIiwiaWF0IjoxNTc4MjI3MTY2LCJleHAiOjE1NzgyMzA3NjYsIm5iZiI6MTU3ODIyNzE2NiwianRpIjoiUDF4ck55QU1lbm9Dd01ESyIsInN1YiI6MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.6JK1C5YhDAxVM36bywLug3GJGvjvL4Lc_s1cnyJHV3g",
+								"description": "bearer + token",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "old_password",
+									"value": "admin",
+									"description": "required|string|min:8|not_same_as_current_password",
+									"type": "text"
+								},
+								{
+									"key": "new_password",
+									"value": "admin1234",
+									"description": "required|string|min:8|not_same_as_old_password|confirmed",
+									"type": "text"
+								},
+								{
+									"key": "new_password_confirmation",
+									"value": "admin1234",
+									"description": "required|string|min:8|not_same_as_old_password",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "put",
+									"description": "required",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "sisg.id/api/change-password",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"change-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zaXNnLmlkXC9hcGlcL2xvZ2luIiwiaWF0IjoxNTc4MjI5MTUxLCJleHAiOjE1NzgyMzI3NTEsIm5iZiI6MTU3ODIyOTE1MSwianRpIjoiNUE2ZWxsRDRWVjVvQVhEYiIsInN1YiI6MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.FcMqw2Z-QN1Au14v07YswY6VVg2IphHcEb31knE9dI4",
+								"description": "bearer + token",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "sisg.id/api/refresh",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "admin@smpsunangiri.sch.id",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "sisg.id/api/forgot-password",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"forgot-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "3ffcc5abe360d382cacdaa6f2260d1d69a19374bea0bb8c39822918349823252",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "admin@smpsunangiri.sch.id",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin5361",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "admin5361",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "sisg.id/api/reset/password",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"reset",
+								"password"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Extracurricular",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "sisg.id/api/extracurricular",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"extracurricular"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zaXNnLmlkXC9hcGlcL2xvZ2luIiwiaWF0IjoxNTc3NTEwNTY5LCJleHAiOjE1Nzc1MTQxNjksIm5iZiI6MTU3NzUxMDU2OSwianRpIjoiN0xEOWZudDNtNDRQRzN4bSIsInN1YiI6MiwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.nNzm5ZEeMYW0dsl2o5mYE4NTd_EfLbmntcnN1mfq5Ms",
+								"description": "bearer + token",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "school_id",
+									"value": "",
+									"description": "required|numeric",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "",
+									"description": "required|string",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"description": "required|image",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "description",
+									"value": "",
+									"description": "required|string",
+									"type": "text"
+								},
+								{
+									"key": "dateFormed",
+									"value": "",
+									"description": "required|date|yyyy-mm-dd",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "sisg.id/api/extracurricular",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"extracurricular"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zaXNnLmlkXC9hcGlcL2xvZ2luIiwiaWF0IjoxNTc3NTEwNTY5LCJleHAiOjE1Nzc1MTQxNjksIm5iZiI6MTU3NzUxMDU2OSwianRpIjoiN0xEOWZudDNtNDRQRzN4bSIsInN1YiI6MiwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.nNzm5ZEeMYW0dsl2o5mYE4NTd_EfLbmntcnN1mfq5Ms",
+								"description": "bearer + token",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "school_id",
+									"value": "",
+									"description": "sometimes|required|numeric",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "title",
+									"value": "",
+									"description": "sometimes|required|string",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"description": "sometimes|required|image",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								},
+								{
+									"key": "description",
+									"value": "",
+									"description": "sometimes|required|string",
+									"type": "text"
+								},
+								{
+									"key": "dateFormed",
+									"value": "",
+									"description": "sometimes|required|date",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "_method",
+									"value": "put",
+									"description": "required",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "sisg.id/api/extracurricular/3",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"extracurricular",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "sisg.id/api/extracurricular/1",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"extracurricular",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zaXNnLmlkXC9hcGlcL2xvZ2luIiwiaWF0IjoxNTc3NTEwNTY5LCJleHAiOjE1Nzc1MTQxNjksIm5iZiI6MTU3NzUxMDU2OSwianRpIjoiN0xEOWZudDNtNDRQRzN4bSIsInN1YiI6MiwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.nNzm5ZEeMYW0dsl2o5mYE4NTd_EfLbmntcnN1mfq5Ms",
+								"description": "bearer + token",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "_method",
+									"value": "delete",
+									"description": "required",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "sisg.id/api/extracurricular/1",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"extracurricular",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Extracurricular Coach",
+			"item": [
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zaXNnLmlkXC9hcGlcL2xvZ2luIiwiaWF0IjoxNTc3NTEwNTY5LCJleHAiOjE1Nzc1MTQxNjksIm5iZiI6MTU3NzUxMDU2OSwianRpIjoiN0xEOWZudDNtNDRQRzN4bSIsInN1YiI6MiwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.nNzm5ZEeMYW0dsl2o5mYE4NTd_EfLbmntcnN1mfq5Ms",
+								"description": "bearer + token",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "extracurricular_id",
+									"value": "",
+									"description": "required|numeric",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "",
+									"description": "required|string",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "",
+									"description": "required|string",
+									"type": "text"
+								},
+								{
+									"key": "dateBorn",
+									"value": "",
+									"description": "required|date|yyyy-mm-dd",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"description": "required|image",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "profile",
+									"value": "",
+									"description": "required|string",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "sisg.id/api/extracurricularCoach",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"extracurricularCoach"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zaXNnLmlkXC9hcGlcL2xvZ2luIiwiaWF0IjoxNTc3NTEwNTY5LCJleHAiOjE1Nzc1MTQxNjksIm5iZiI6MTU3NzUxMDU2OSwianRpIjoiN0xEOWZudDNtNDRQRzN4bSIsInN1YiI6MiwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.nNzm5ZEeMYW0dsl2o5mYE4NTd_EfLbmntcnN1mfq5Ms",
+								"description": "bearer + token",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "extracurricular_id",
+									"value": "",
+									"description": "sometimes|required|numeric",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "nama",
+									"value": "",
+									"description": "sometimes|required|string",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "gender",
+									"value": "",
+									"description": "sometimes|required|string",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "dateBorn",
+									"value": "",
+									"description": "sometimes|required|date|yyyy-mm-dd",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "photo",
+									"description": "sometimes|required|image",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								},
+								{
+									"key": "profile",
+									"value": "",
+									"description": "sometimes|required|string",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "put",
+									"description": "required",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "sisg.id/api/extracurricularCoach/5",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"extracurricularCoach",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "sisg.id/api/extracurricularCoach",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"extracurricularCoach"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "sisg.id/api/extracurricularCoach/4",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"extracurricularCoach",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zaXNnLmlkXC9hcGlcL2xvZ2luIiwiaWF0IjoxNTc3NTEwNTY5LCJleHAiOjE1Nzc1MTQxNjksIm5iZiI6MTU3NzUxMDU2OSwianRpIjoiN0xEOWZudDNtNDRQRzN4bSIsInN1YiI6MiwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.nNzm5ZEeMYW0dsl2o5mYE4NTd_EfLbmntcnN1mfq5Ms",
+								"description": "bearer + token",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "_method",
+									"value": "delete",
+									"description": "required",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "sisg.id/api/extracurricularCoach/5",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"extracurricularCoach",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "PPDB Siswa",
+			"item": [
+				{
+					"name": "Validasi NISN",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nisn",
+									"value": "",
+									"description": "required|numeric|digits:10",
+									"type": "text"
+								},
+								{
+									"key": "nama_ibu",
+									"value": "",
+									"description": "required|string",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "sisg.id/api/validasi-nisn",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"validasi-nisn"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Attachment",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "sisg.id/api/attachment/index/1",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"attachment",
+								"index",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zaXNnLmlkXC9hcGlcL2xvZ2luIiwiaWF0IjoxNTc5NTY0ODM3LCJleHAiOjE1Nzk1Njg0MzcsIm5iZiI6MTU3OTU2NDgzNywianRpIjoiS0FFY1NIbHdxV0tWOTFPZiIsInN1YiI6MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.U9LlpyTdF1CNHBb1vh7Hl_wDdWHam6f3OLniJFTz9UQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "parent_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "attachment",
+									"type": "file",
+									"src": "/D:/VID_20190202_164512.mp4"
+								},
+								{
+									"key": "judul",
+									"value": "alarm",
+									"type": "text"
+								},
+								{
+									"key": "subjudul",
+									"value": "alaramw",
+									"type": "text"
+								},
+								{
+									"key": "deskripsi",
+									"value": "ijwjqho",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "sisg.id/api/attachment",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"attachment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zaXNnLmlkXC9hcGlcL2xvZ2luIiwiaWF0IjoxNTc5NTY0ODM3LCJleHAiOjE1Nzk1Njg0MzcsIm5iZiI6MTU3OTU2NDgzNywianRpIjoiS0FFY1NIbHdxV0tWOTFPZiIsInN1YiI6MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.U9LlpyTdF1CNHBb1vh7Hl_wDdWHam6f3OLniJFTz9UQ"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "parent_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "attachment",
+									"type": "file",
+									"src": "/C:/Users/David Surya/Downloads/starbucks.jpg"
+								},
+								{
+									"key": "judul",
+									"value": "alarm",
+									"type": "text"
+								},
+								{
+									"key": "subjudul",
+									"value": "alaramw",
+									"type": "text"
+								},
+								{
+									"key": "deskripsi",
+									"value": "ijwjqho",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "put",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "sisg.id/api/attachment",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"attachment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zaXNnLmlkXC9hcGlcL2xvZ2luIiwiaWF0IjoxNTc5NTY0ODM3LCJleHAiOjE1Nzk1Njg0MzcsIm5iZiI6MTU3OTU2NDgzNywianRpIjoiS0FFY1NIbHdxV0tWOTFPZiIsInN1YiI6MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.U9LlpyTdF1CNHBb1vh7Hl_wDdWHam6f3OLniJFTz9UQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "_method",
+									"value": "delete",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "sisg.id/api/attachment/2",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"attachment",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "sisg.id/api/attachment/2",
+							"host": [
+								"sisg",
+								"id"
+							],
+							"path": [
+								"api",
+								"attachment",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
