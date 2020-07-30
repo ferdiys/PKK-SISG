@@ -1,21 +1,30 @@
 # Sistem Informasi SMP Sunan Giri
 
-Website SMP Sunan Giri beserta PPDB Online
+Website SMP Sunan Giri beserta PPDB Online, dibangun menggunakan Laravel dan React.js
+
+## Daftar Isi
+
+* [Teams](#teams)
+* [Preview](#preview)
+* [Prerequisites](#prerequisites)
+* [Installation](#installation)
+* [Updating Project](#updating-project)
+* [Other Notes](#other-notes)
 
 ## Teams
 
-[Ahmad Ivan Reyhan](https://github.com/IvanReyhan22) as Project Manager
-[David Surya](https://github.com/davpyu) as Co-PM
-[Titto Mahogany A]() as FrontEnd Developer  
-[Alifa Fitriana P.Y]() as FrontEnd Developer  
-[M Ghazy Al-Ghifari]() as BackEnd Developer  
-[Ferdi Yusuf S](https://github.com/ferdiys) as BackEnd Developer  
-[Robet Atiq]() as Database Analyst  
-[Ummu Cholifatul Latifah](https://github.com/latifah1105) as Tester  
-[Alif Anantomi]() as Product Analyst  
-[Shalvina Eka]() as Product Analyst  
-[Dimas Riski]() as Product Installer  
-[Alvina Yusan P]() as Product Installer  
+* [Ahmad Ivan Reyhan](https://github.com/IvanReyhan22) as Project Manager
+* [David Surya F](https://github.com/davpyu) as Co-PM
+* [Titto Mahogany A]() as Front End Developer  
+* [Alifa Fitriana P.Y]() as Front End Developer  
+* [M Ghazy Al-Ghifari]() as Back End Developer  
+* [Ferdi Yusuf S](https://github.com/ferdiys) as Back End Developer  
+* [Robet Atiq]() as Database Analyst  
+* [Ummu Cholifatul Latifah](https://github.com/latifah1105) as Tester  
+* [Alif Anantomi B]() as Product Analyst  
+* [Shalvina Eka]() as Product Analyst  
+* [Dimas Riski S]() as Product Installer  
+* [Alvina Yusan P]() as Product Installer  
 
 ## Preview
 
@@ -23,7 +32,7 @@ Website SMP Sunan Giri beserta PPDB Online
 
 ## Prerequisites
 
-* [XAMPP](https://www.apachefriends.org/download.html) - Server Lokal (Gunakan versi terbaru)
+* [XAMPP](https://www.apachefriends.org/download.html) - Local Server (Use Last Version) or something similiar like this
 * [Composer](https://getcomposer.org/download/) - PHP Dependency Manager
 * [NPM](https://nodejs.org/en/) - JS Package Manager
 
@@ -78,7 +87,7 @@ npm install && npm run dev
 
 #### Run your server
 
-Use XAMPP or run these
+Use XAMPP/LAMP/MAMP or run these
 
 ```bash
 php artisan serve
@@ -119,9 +128,8 @@ php artisan migrate:refresh --seed
 
 ## Other Notes
 
-**Laravel Docs:**
-
-[https://laravel.com/docs/6.x](https://laravel.com/docs/6.x)
+[Laravel Docs](https://laravel.com/docs/6.x)<br>
+[React Docs](https://reactjs.org/docs)
 
 ## License
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
